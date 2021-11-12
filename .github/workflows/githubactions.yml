@@ -22,6 +22,8 @@ jobs:
         run: npm install
       - run: npm run build --if-present
       - run: npm test
+      - run: npm test-clean
+      - run: npm test-dev
 
       - name: Send email if failure
         if: steps.instal.outcome != 'failure'

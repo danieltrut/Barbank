@@ -4,7 +4,9 @@
   "description": "A back end for internet bank",
   "main": "index.js",
   "scripts": {
-    "test": "rm -rf node_modules, npm cache clean, npm run dev",
+    "test": "rm -rf node_modules",
+    "test-clean": "npm cache clean",
+    "test-dev": "npm run dev",
     "dev": "nodemon -e yaml,js index.js"
   },
   "keywords": [
