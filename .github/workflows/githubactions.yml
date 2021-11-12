@@ -20,13 +20,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-        npm install
-        npm run build --if-present
-        exit 0
-        npm test
-        exit 0
-        killall node
-        npm run dev
+          npm install
+          npm run build --if-present
+          exit 0
+          npm test
+          exit 0
+          killall node
+          npm run dev
       - id: instal
 
 
