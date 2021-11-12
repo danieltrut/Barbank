@@ -27,6 +27,7 @@ jobs:
 
 
       - name: Run dev
+      - uses: actions/setup-node@v1
       - run: npm run dev
       - id: instal
 
