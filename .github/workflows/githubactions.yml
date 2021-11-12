@@ -18,6 +18,11 @@ jobs:
         with:
           node-version: '12.x'
       - name: Install dependencies
+        id: instal
         run: npm install
       - run: npm run build --if-present
       - run: npm test
+
+      - name: Send email if failure
+        if: steps.instal.outcome != 'failure'
+          run: exit 1
