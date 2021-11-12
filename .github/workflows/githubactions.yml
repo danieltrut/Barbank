@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js
-      - uses: actions/setup-node@v1
+        uses: actions/setup-node@v1
         with:
           node-version: '12.x'
         run: |
@@ -25,11 +25,6 @@ jobs:
           exit 0
           killall node
           npm run dev
-      - id: instal
-
-
-      - name: Run dev
-      - run: npm run dev
       - id: instal
 
       - name: Send email if failure
