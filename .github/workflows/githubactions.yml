@@ -23,9 +23,9 @@ jobs:
       - run: npm run build --if-present
       - run: exit 0
       - run: npm test
-      - run: npm clean
+      - run: npm cache clean
       - run: exit 0
-      - run: npm dev1
+      - run: npm run dev
 
       - name: Send email if failure
         if: steps.instal.outcome != 'failure'
