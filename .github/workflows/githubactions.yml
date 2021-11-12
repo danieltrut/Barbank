@@ -25,4 +25,4 @@ jobs:
 
       - name: Send email if failure
         if: steps.instal.outcome != 'failure'
-          run: exit 1
+        run: exit 1
