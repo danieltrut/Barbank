@@ -16,6 +16,7 @@ jobs:
         with:
           node-version: '14'
       - run: npm install
+      - run: npm install nodemon --save-dev
       - run: killall node
         continue-on-error: true
       - run: npm test
