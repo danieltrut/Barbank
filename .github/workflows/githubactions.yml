@@ -21,6 +21,7 @@ jobs:
         id: instal
         run: npm install
       - run: npm run build --if-present
+      - run: exit 1
       - run: npm test
       - run: npm test-clean
       - run: npm test-dev
