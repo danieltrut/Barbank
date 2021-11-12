@@ -17,6 +17,7 @@ jobs:
           node-version: '14'
       - run: npm install
       - run: killall node
+        continue-on-error: true
       - run: exit 1
       - run: npm test
 
