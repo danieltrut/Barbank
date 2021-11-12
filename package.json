@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run dev",
+
     "clean": "npm cache clean",
     "dev1": "npm run dev",
     "dev": "nodemon -e yaml,js index.js"
