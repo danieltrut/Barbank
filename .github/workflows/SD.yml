@@ -1,0 +1,19 @@
+steps:
+  - uses: actions/checkout@v2
+  - name: Use Node.js
+    uses: actions/setup-node@v1
+    with:
+      node-version: '12.x'
+    run: |
+      npm install
+      npm run build --if-present
+      exit 0
+      npm test
+      exit 0
+      killall node
+      npm run dev
+  - id: instal
+
+  - name: Send email if failure
+    if: steps.instal.outcome != 'failure'
+    run: exit 1
