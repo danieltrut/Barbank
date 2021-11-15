@@ -175,7 +175,7 @@ paths:
               examples:
                 ' GET /transactions 200 response':
                   value:
-                    accountFrom: 978c06c2f7032eece45cfd0331afab3833d
+                    accountFrom: 978c06c2f7032eece45cfd0331afab3833ds
                     accountTo: 92c84bb50b65304f534480390cc90aafcbc
                     amount: 100
                     createdAt: '2021-10-21T18:38:02.678Z'
